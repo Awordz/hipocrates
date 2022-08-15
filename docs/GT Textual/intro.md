@@ -1,0 +1,9 @@
+---
+id: gt-textual-intro
+title: GT textual intro
+
+---
+
+# Esta es la intro del grupo textual
+
+textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual textual 
