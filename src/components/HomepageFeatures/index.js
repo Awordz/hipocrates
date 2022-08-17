@@ -1,11 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-// camion esta es un aprueba de spell 
+
 const FeatureList = [
   {
     title: 'Textual',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/textual_icono.svg').default,
     description: (
       <>
         Los CI en España presentan problemas de comprensibilidad. El GT textual ha trabajado en recomendaciones de redacción y formato de los CI, así como en la elaboración de modelos optimizados.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Legal',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/legal_icono.svg').default,
     description: (
       <>
         Análisis de las diferentes legislaciones sobre CI a nivel autonómico y nacional desde diferentes puntos de vista: documentación clínica, general y sobre cuestiones LGTBI+.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Didactico',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/didactico_icono.svg').default,
     description: (
       <>
         La formación sobre CI es clave en el entorno actual de las «Medical Humanities» y, por tanto, se ha hecho hincapié en la mejora de la formación y de la transmisión de conocimientos sobre CI.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Profesional',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/profesional_icono.svg').default,
     description: (
       <>
         Trabajo con los profesionales sanitarios que están en primera línea y hacen uso real de los CI: médicas y enfermeras. ¿Cómo utilizan los CI? ¿Qué uso hacen de los CI?
@@ -50,6 +50,7 @@ function Feature({Svg, title, description}) {
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
+        <br/><br/>
       </div>
     </div>
   );
@@ -64,7 +65,7 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        lll
+        
       </div>
     </section>
   );

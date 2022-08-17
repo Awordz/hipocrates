@@ -73,11 +73,7 @@ const config = {
             className: "menu-destacado",
           },
 
-          {
-            to: "/index2",
-            position: "left",
-            label: "home_alt",
-          },
+          
 
           {
             href: "http://www.gentt.uji.es/",
@@ -134,15 +130,15 @@ const config = {
               },
               {
                 label: "UJI Universitat Jaume I ",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                href: "https://www.uji.es/",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "#",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "#",
               },
             ],
           },

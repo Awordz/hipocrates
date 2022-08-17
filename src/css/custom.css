@@ -3,8 +3,8 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
- 
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Mulish&display=swap");
 
 /* You can override the default Infima variables here. */
 :root {
@@ -18,14 +18,15 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-
   --ifm-color-accent: #e5077e;
-  --ifm-font-family-base: 'Open Sans';
+  --ifm-font-family-base: "Mulish";
+
+  --color-texto: rgb(32, 32, 32);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #92faf1;
+[data-theme="dark"] {
+  --ifm-color-primary: #35a8e0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -35,38 +36,32 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-
-
 .menu-destacado {
-  background-color:rgba(255, 254, 254, 0);
+  background-color: rgba(255, 254, 254, 0);
   border: 2px var(--ifm-color-primary) solid;
   color: var(--ifm-color-primary);
   border-radius: 5px;
 }
 
 a.menu-destacado:hover {
-  background-color:var(--ifm-color-primary);;
+  background-color: var(--ifm-color-primary);
   border: 2px var(--ifm-color-primary) solid;
   color: white;
 }
 
 /* CSS para la Home page, pero son globales */
 #home .hero-section {
-
-  background-color: #FDFAFF;
+  background-color: #fdfaff;
   background-image: url(https://hipocratesgentt.uji.es/wp-content/uploads/2022/05/slide3.png);
-  background-size: cover;  
+  background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
   min-width: 100%;
   min-height: 100%;
-
 }
 
 .footer--dark {
-
-  background-color: var(--ifm-color-primary) 
-
+  background-color: var(--ifm-color-primary);
 }
 
 .footer__bottom {
@@ -77,12 +72,190 @@ a.menu-destacado:hover {
 }
 
 .raya-footer {
- border-top: 3px solid var(--ifm-color-accent);
- width: 20%;  
+  border-top: 3px solid var(--ifm-color-accent);
+  width: 20%;
+}
+
+footer ul li > a.footer__link-item {
+  color: white !important;
+}
+
+.hero {
+  background-color: #fdfaff;
+  background-image: url(https://hipocratesgentt.uji.es/wp-content/uploads/2022/05/slide3.png);
+  background-size: cover;
+  background-position: center;
+  align-items: flex-start;
+  padding-left: 0rem;
+
+  /* justify-content: left; */
+
+
+  height: 620px;
+  color: rgb(32, 32, 32);
+}
+
+.titulo-home, .hero__title {
+  text-align: left;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 5rem);
+}
+
+.titulo-home {
+
+  text-align: center;
+}
+
+.hero__subtitle {
+  text-align: left;
+  width: clamp(70%,80% , 100%);
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
+}
+
+.heroBanner_src-pages-index-module {
+  text-align: left;
+}
+
+.buttons_src-pages-index-module{
+  justify-content: left!important;
+}
+
+.gentt {
+  display: flex;
+  /* background-color: #1a8870; */
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 2.5em auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.gentt .imagen {
+  width: 50%;
+  min-width: 400px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.gentt .text {
+  /* border: 0.5px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 400px;
+  padding-left: 1em;
+
+}
+
+.gentt .text .pre-title {
+
+  color: var(--ifm-color-primary);
+  font-size: 0.9rem;
+  font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gentt .text .title {
+
+  
+  text-align: left;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 4rem);
+  
+}
+
+.boton-home {
+  margin: 1em 0;
+  width:173px;
+  height:50px;
+  border-width:2px;
+  color:var(--ifm-color-primary);
+  border-color:var(--ifm-color-primary);
+  /* font-weight:bold; */
+  font-family: Mulish;
+  font-size: 1em;
+  font-weight: 500;
+  background-color:transparent;
+  background-color: rgba(255, 254, 254, 0);
+  border: 2px var(--ifm-color-primary) solid;
+  color: var(--ifm-color-primary);
+  border-radius: 5px;
 }
 
 
+.grupos {
 
-footer ul li > a.footer__link-item {
-  color: white!important;
+
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  margin-bottom: 2em;
+}
+
+.grupos__row {
+
+  display: flex;
+  
+  justify-content: center;
+  padding: 2em;
+  gap: 2em;
+  border-radius: 15px;
+
+}
+
+.grupos__row.azul {
+  background-color: #e8f8ff;
+  
+}
+
+.grupos__row.rosa {
+  background-color: #fff0fe;
+}
+
+.grupos_grupo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+}
+.titulo-row {
+
+  text-align: center;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
+  margin: 0.5em 0;
+
+}
+
+.grupo__nombre {
+
+  text-align: center;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.7rem);
+  
+}
+
+
+.link-grupo {
+  color: var(--color-texto);
+
+}
+
+.link-grupo:hover {
+  text-decoration:none;
+  font-weight: 800;
+  color: var(--color-texto);
+
 }
