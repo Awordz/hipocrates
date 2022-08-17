@@ -186,6 +186,7 @@ footer ul li > a.footer__link-item {
   border: 2px var(--ifm-color-primary) solid;
   color: var(--ifm-color-primary);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 
