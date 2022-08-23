@@ -8,7 +8,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #35a8e0;
+  --ifm-color-primary: #39A8E0;
   --ifm-color-primary-dark: #004caf;
   --ifm-color-primary-darker: #00295e;
   --ifm-color-primary-darkest: #00193a;
@@ -17,11 +17,15 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-
+  
   --ifm-color-accent: #e5077e;
   --ifm-font-family-base: "Mulish";
 
   --color-texto: rgb(32, 32, 32);
+
+
+  --ifm-navbar-height: 5rem;
+  
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -34,6 +38,15 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  padding-top: 0px;
+}
+
+.navbar__logo img {
+  width: 200px;
+  height: auto;
 }
 
 .menu-destacado {
@@ -193,7 +206,8 @@ footer ul li > a.footer__link-item {
 .grupos {
 
 
-  width: 80%;
+  /* width: 80%; */
+  width: calc(80vw);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -204,12 +218,14 @@ footer ul li > a.footer__link-item {
 
 .grupos__row {
 
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
   
-  justify-content: center;
+  
   padding: 2em;
   gap: 2em;
   border-radius: 15px;
+  
 
 }
 
@@ -223,10 +239,13 @@ footer ul li > a.footer__link-item {
 }
 
 .grupos_grupo{
+ 
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  flex: 1;
   
 }
 .titulo-row {
@@ -256,7 +275,25 @@ footer ul li > a.footer__link-item {
 
 .link-grupo:hover {
   text-decoration:none;
-  font-weight: 800;
+  font-weight: 400;
+  background-color: #b1b1b12d;
   color: var(--color-texto);
+  border-radius: 8px;
 
 }
+
+
+.genially-div {
+
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 0; 
+  height: 0;
+
+}
+.genially-iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; top: 0; left: 0; 
+}
+

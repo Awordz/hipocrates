@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Hipócrates Docs",
-  tagline: "Dinosaurs are cool",
-  url: "https:/hipocrates.melianakm0.com",
+  title: "Hipócrates :: un proyécto de GENTT",
+  tagline: "Es un proyecto del grupo de investigación GENTT con el objetivo de mejorar la comunicación en el contexto médico-sanitariours are cool",
+  url: "https://hipocrates.vercel.app/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -44,27 +44,29 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/logo.png',
+
       navbar: {
-        title: "Hipócrates GENTT ",
+        title: "",
         logo: {
-          alt: "My Site Logo",
-          src: "img/favicon.png",
+          alt: "Logo",
+          src: "img/logo.png",
         },
         hideOnScroll: true,
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "textual/gt-textual-introduccion",
             position: "left",
-            label: "Docs",
+            label: "Ver resultados",
           },
 
-          {
-            type: "doc",
-            docId: "GT Textual/Pipeline Análisis/corpus",
-            position: "left",
-            label: "Corpus",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "GT Textual/gt-textual-prototipo",
+          //   position: "left",
+          //   label: "Corpus",
+          // },
 
           {
             to: "/guia-buenas-practicas",
@@ -90,11 +92,11 @@ const config = {
         style: "dark",
         links: [
           {
-            title:".",
+            title:" ",
             items: [
               
               {
-                html: `<img src="img/invertido.svg">`,
+                html: `<img src="/img/invertido.svg">`,
               },
             ],
           },
@@ -122,7 +124,7 @@ const config = {
             ],
           },
           {
-            title: "Recursos externos ",
+            title: "Contacta con nosotros ",
             items: [
               {
 
@@ -133,24 +135,6 @@ const config = {
                 href: "https://www.uji.es/",
               },
               {
-                label: "Discord",
-                href: "#",
-              },
-              {
-                label: "Twitter",
-                href: "#",
-              },
-            ],
-          },
-          {
-            title: "Contacta con nosotros",
-            items: [
-              {
-
-                html: `<hr class="raya-footer">`,
-              },
-              
-              {
                 label: "GENTT",
                 href: "http://www.gentt.uji.es/",
               },
@@ -158,6 +142,21 @@ const config = {
                 label: "gentt@uji.es",
                 href: "mailto:gentt@uji.es",
               },
+            ],
+          },
+          {
+            title: "Proyecto financiado por",
+            items: [
+              {
+
+                html: `<hr class="raya-footer">`,
+              },
+              {
+
+                html: `<img src="/img/logo-ministeri.png">`,
+              },
+              
+              
             ],
           },
         ],

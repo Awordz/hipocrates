@@ -12,19 +12,18 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">Saber comunicar</h1>
+        <h1 className="hero__title">
+          Humanizar la comunicación médico-sanitaria
+        </h1>
         <p className="hero__subtitle">
-          La comunicación en el dominio médico es clave. A pesar de la
-          generalización de las Medical Humanities y la comunicación centrada en
-          el paciente de los 2000, los géneros médicos continúan teniendo muchas
-          carencias de comprensibilidad.
+        This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing 
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs/textual/gt-textual-introduccion"
           >
-            Docs 📘📚
+            Ver resultados 📘📚
           </Link>
         </div>
       </div>
@@ -44,15 +43,24 @@ function Gentt() {
         <div className="pre-title">ACERCA DEL PROYECTO</div>
         <div className="title">¿Qué es HIPÓCRATES?</div>
         <div className="subtitle">
-          Es un proyecto de GENTT que tiene el objetivo de formar en
-          comunicación a los profesionales médicos, así como a los redactores y
-          traductores médicos para que se adecuen a las normas textuales,
-          cognitivas y sociales que regulan los géneros para pacientes y poder
-          responder adecuadamente a sus necesidades. Esto es especialmente
-          relevante en géneros dirigidos a pacientes, como el Consentimiento
-          Informado (CI), objetivo rector de HIPÓCRATES
+          Es un proyecto del grupo de investigación GENTT con el objetivo de
+          mejorar la comunicación en el contexto médico-sanitario, generar
+          materiales y recursos para diferentes colectivos, desde el personal
+          sanitario a los redactores y traductores e intérpretes médicos.<br/><br/>
+          Revisamos las normas textuales, cognitivas y sociales que regulan los
+          géneros para pacientes para responder adecuadamente a las necesidades
+          de pacientes y personal médico-sanitario. En el proyecto, nos hemos
+          centrado en la investigación en el Consentimiento Informado (CI) como
+          acto de comunicación oral y escrita.
         </div>
-        <button className="boton-home" onClick={()=>{window.open("http://www.gentt.uji.es/","_blank","","")}}>El grupo GENTT</button>
+        <button
+          className="boton-home"
+          onClick={() => {
+            window.open("http://www.gentt.uji.es/", "_blank", "", "");
+          }}
+        >
+          El grupo GENTT
+        </button>
       </div>
     </div>
   );
@@ -62,50 +70,64 @@ function Grupos() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <div className="grupos">
-      <div className="titulo-home">Grupos de trabajo</div>
-      <div className="titulo-row">El consentimiento informado como producto</div>
+      <div className="titulo-home">Perspectivas de análisis</div>
+      <div className="titulo-row">
+        El consentimiento informado como producto
+      </div>
       <div className="grupos__row azul">
         <div className="grupos_grupo">
-          <a  className="link-grupo" href="/docs/category/gt-textual"><div className="grupo_imagen">
-            <img src="./img/textual_icono.png"></img>
-          </div>
-          <div className="grupo__nombre">Textual</div>
-          <div className="grupo___descripcion">Los CI en España presentan problemas de comprensibilidad. El GT textual ha trabajado en recomendaciones de redacción y formato de los CI, así como en la elaboración de modelos optimizados.</div>
-        </a></div>
+          <a className="link-grupo" href="/docs/textual/gt-textual-introduccion">
+            <div className="grupo_imagen">
+              <img src="./img/textual_icono.png"></img>
+            </div>
+            <div className="grupo__nombre">Aspectos textuales</div>
+            <div className="grupo___descripcion">
+            El CI presenta importantes problemas de comprensibilidad. Desde esta perspectiva hemos desarrollado una herramienta de análisis textual, con la que hemos analizado un corpus de CI en español, catalán e inglés. Este análisis nos ha permitido identificar los elementos lingüístico-textuales que dificultan la comprensión, proponer modelos optimizados con distintos niveles de complejidad tanto en formato tradicional como digital (e-consent). 
 
-       <a  className="link-grupo" href="/docs/category/gt-legal">
+            </div>
+          </a>
+        </div>
+
+        <a className="link-grupo" href="/docs/category/marco-legal">
           <div className="grupos_grupo">
             <div className="grupo_imagen">
               <img src="./img/legal_icono.png"></img>
             </div>
-            <div className="grupo__nombre">Legal</div>
-            <div className="grupo___descripcion">Análisis de las diferentes legislaciones sobre CI a nivel autonómico y nacional desde diferentes puntos de vista: documentación clínica, general y sobre cuestiones LGTBI+.</div>
-          </div>
-       </a>
+            <div className="grupo__nombre">Marco legal</div>
+            <div className="grupo___descripcion">
+            Desde el punto de vista jurídico hemos recopilado y analizado la legislación aplicable al CI en España, tanto en el ámbito autonómico como estatal y en el plano internacional: leyes generales de salud y documentación clínica, últimas voluntades, derechos LGTBI+, etc.
 
+            </div>
+          </div>
+        </a>
       </div>
-      <div className="titulo-row">El consentimiento informado como servicio</div>
+      <div className="titulo-row">
+        El consentimiento informado como servicio
+      </div>
       <div className="grupos__row rosa">
-        <a  className="link-grupo" href="/docs/category/gt-did%C3%A1ctico">
+        <a className="link-grupo" href="http://localhost:3000/docs/category/orientaciones-pedag%C3%B3gicas">
           <div className="grupos_grupo">
             <div className="grupo_imagen">
               <img src="./img/didactico_icono.png"></img>
             </div>
-            <div className="grupo__nombre">Didáctico</div>
-            <div className="grupo___descripcion">La formación sobre CI es clave en el entorno actual de las «Medical Humanities» y, por tanto, se ha hecho hincapié en la mejora de la formación y de la transmisión de conocimientos sobre CI.</div>
+            <div className="grupo__nombre">Orientaciones pedagógicas</div>
+            <div className="grupo___descripcion">This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing This text is missing 
+            </div>
           </div>
         </a>
 
-        <a className="link-grupo" href="/docs/category/gt-profesional">
+        <a className="link-grupo" href="/docs/category/perspectiva-socioprofesional">
           <div className="grupos_grupo">
             <div className="grupo_imagen">
               <img src="./img/profesional_icono.png"></img>
             </div>
-            <div className="grupo__nombre">Profesional</div>
-            <div className="grupo___descripcion">Trabajo con los profesionales sanitarios que están en primera línea y hacen uso real de los CI: médicas y enfermeras. ¿Cómo utilizan los CI? ¿Qué uso hacen de los CI?</div>
+            <div className="grupo__nombre">Perspectiva socioprofesional</div>
+            <div className="grupo___descripcion">
+            La implicación de los profesionales sanitarios es fundamental para entender las condiciones reales de la comunicación y mejorarla. Desde esta perspectiva, hemos analizado las percepciones del personal de medicina y enfermería en cuanto a la administración del Consentimiento Informado (CI). 
+
+            </div>
           </div>
         </a>
-        
       </div>
     </div>
   );
@@ -116,12 +138,11 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="HIPÓCRATES::un proyecto del grupo de investigación GENTT "
     >
       <HomepageHeader />
       <Gentt />
       <main>
-        
         <Grupos />
       </main>
     </Layout>

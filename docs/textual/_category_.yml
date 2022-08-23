@@ -1,10 +1,10 @@
 position: 1.1 # float position is supported
-label: 'GT Textual'
+label: 'Aspectos textuales'
 collapsible: true # make the category collapsible
-collapsed: false # keep the category open by default
+collapsed: true # keep the category open by default
 className: red
 link:
   type: generated-index
-  title: Tutorial overview
+  title: Aspectos textuales
 customProps:
   description: This description can be used in the swizzled DocCard

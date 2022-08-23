@@ -1,6 +1,6 @@
 ---
 id: intro
-sidebar_position: 1
+sidebar_position: 8
 title: Mini manual de Markdown
 description: my hello page description
 hide_table_of_contents: false
@@ -9,9 +9,10 @@ tags:
   - Getting started
 ---
 
-# Esta es la página del grupo Textual
-sdlkasjdlk
+# Esta página es para referencia temporal
+La documentos puede contruirse mediante REACT o MarkDown.
 
+Markdown es sin duda suficiente y mas sencillo.
 
 ## Normas generales
 
